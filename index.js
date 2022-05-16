@@ -48,7 +48,6 @@ app.post("/register",async(req,res)=>{
 
 
 
-
 app.post("/login", async (req, res) => {
     //res.send(req.body);
     console.log(req.body)

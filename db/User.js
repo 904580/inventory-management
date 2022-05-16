@@ -3,8 +3,15 @@ const UserSchema = new mongoose.Schema({
     name:String,
     email:String,
      phonenumber: Number,
-    password:String,
-    confirmpassword:String
+    password:{
+        type: String,
+        required:true,
+    },
+    confirmpassword:{
+        type: String,
+        required:true
+        
+    }
 });
 
 module.exports = mongoose.model("Users", UserSchema);
